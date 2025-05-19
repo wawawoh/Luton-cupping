@@ -1,0 +1,259 @@
+/* ORANGE #B34A10
+    BLUE #162D56 */
+/* GLOBALS */
+body {
+    
+    font-family: Gentium Book Plus;
+    color: #162D56;
+}
+.who-content, .what-is-hijama, .our-services, .hadith {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    padding-top: 3rem;
+    gap: 1rem;
+    text-align: center;
+}
+  .logo {
+        max-height: 80px;
+        max-width:80px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 90%;
+    }
+.cta-button {
+    
+        align-self: stretch;
+        padding: 0.4rem;
+        border-radius: 0.9rem;
+        border: none;
+        color: white;
+    
+}
+h2 {
+    text-decoration: underline;
+    text-underline-offset: 0.2rem;
+    font-weight: bold;
+    color: #B34A10;
+    text-decoration-color: #162D56
+}
+
+/* header 
+------------------------------------------*/
+header {
+    display: flex;
+    background-color: #B34A10;
+    padding: 1rem 1rem;
+    align-items: center;
+    gap: 1rem;
+
+    /* ELEMENTS  */
+  
+    p {
+        color: white;
+        margin-right: auto;
+        font-size: 1.2rem;
+        
+
+    }
+    .mobile-nav {
+        max-width: 15%;
+    }
+}
+
+
+/* MAIN CONTENT  
+--------------------------------------------------------------*/
+.main-content-wrapper {
+    /* inactive for now */
+}
+main {
+    display: flex;
+    flex-direction: column;
+    gap: rem;
+}
+
+
+/* HERO
+----------------------------------------------------------*/
+.hero{
+    p {
+        color: #1d2a41;
+    }
+
+}
+.hero-written-content {
+    padding: 8rem 5rem 8rem 1rem;
+    background-image: url(/images/floral-background-with-branch.jpg);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    
+    
+    /* elements */
+    h1 {
+        font-size: 2rem;
+
+    }
+    p {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+    .button-container {
+        
+        display: flex;
+         flex-direction: column;
+         gap: 1rem;
+        
+       
+        align-items: flex-start;
+        .book-now {
+            
+        }
+        
+    }
+}
+.hero-button, .hero-second-button {
+    padding: 0.5rem 1.5rem;
+    border-radius: 2rem;
+    letter-spacing: 0.2rem;
+    text-transform: capitalize;
+    border: none;
+}
+.hero-button {
+    background-color: #162D56;
+    
+    color: white;
+    
+}
+.hero-second-button {
+    background: none;
+    border: solid #B34A10 2px;
+    color: #B34A10;
+    font-weight: bold;
+
+}
+
+/* WHO WE ARE 
+----------------------------------------------------------*/
+.who-content {
+    ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li:before {
+  content: '✓';
+  color: #B34A10;
+  margin-right: 2rem;
+  text-align: center;
+}
+img {
+    width: 20%;
+}
+}
+.cupman-wrapper {
+    height: 20rem;
+    overflow: hidden;
+}
+
+
+
+/* HIJAMA 
+----------------------------------------------------------*/
+.what-is-hijama {
+    background-color: rgb(231, 198, 154);
+    p:first-of-type {
+        position: relative;
+    }
+    p:first-of-type::after {
+        content: "";
+        height: 2px;
+        width: 20rem;
+        background-color: #B34A10;
+        position: absolute;
+        bottom: -0.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+
+        
+    }
+    button {
+        background-color: #B34A10;
+    }
+}
+.injuries {
+    display: flex;
+    gap: 2rem;
+    ul {
+        padding: 0;
+        font-weight: bold;
+    }
+    
+}
+
+/* OUR SERVICES
+----------------------------------------------------------*/
+.our-services {
+    button {
+        background-color: #162D56;
+    }
+}
+
+.service-wrapper {
+    margin-bottom: 1rem;
+    display: flex;
+    color: #B34A10;
+    align-items: center;
+    border: #B34A10 solid 1px;
+    padding: 1rem;
+    border-radius: 1rem;
+    /* elemtns  */
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    img {
+        width: 20%;
+    }
+    
+}
+
+
+
+/* HADITH
+----------------------------------------------------------*/
+.hadith {
+    background-color: #1d2a41;
+    color: rgb(198, 169, 108);
+    h2 {
+        color: rgb(255, 255, 255);
+        text-decoration-color: #B34A10;
+    }
+}
+
+/* footer
+----------------------------------------------------------*/
+footer {
+    background-color: #B34A10;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1rem;
+    align-items: center;
+    .socials {
+        display: flex;
+        justify-content: space-around;
+        align-self: stretch;
+        
+        img {
+            max-height: 2rem;
+        }
+    }
+}
+
+
+
+
