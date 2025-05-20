@@ -16,8 +16,9 @@ main {
 ------------------------------------ */
 h1 {
     margin: auto;
+    width: 100%;
     font-size: 2rem;
-    padding: 20% 0;
+    padding: 20% 1px;
     background-image: url(/images/hero-mobile.jpeg);
     background-position: center;
     background-repeat: no-repeat;
@@ -111,11 +112,12 @@ h1,h2, h3, h4, p {
     }
 }
 .high {
-      border: #B34A10 solid 2px;
+      border: #eab89e solid 2px;
       color: #B34A10;
     border-radius: 4px;
+    background-image: linear-gradient(to right top, #f8da4d, #ffcb84, #ffcbc2, #ffdaef, #ffecff, #ffecff, #ffecff, #ffecff, #ffdaef, #ffcbc2, #ffcb84, #f8da4d);
     ul::after {
-        background-color: #c26837;
+        background-color: #e8c4b1;
     }
     img {
         width: 20%;
@@ -150,9 +152,47 @@ h1,h2, h3, h4, p {
 
 
 /* CALL CHARGE */
+.callout-charge {
+    img {
+        margin: auto;
+    }
+}
 
 /* HEADER 
 ----------------------------- */
 
 /* FOOTER
 -------------------------------- */
+
+@media only screen and (min-width:700px) {
+
+    h1 {
+    margin: auto;
+    font-size: 2rem;
+    padding: 10% 0;
+    width: 100vw;
+    background-image: url(/images/hero-desktop.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    .packages-wrapper {
+        display: flex;
+    }
+    .package {
+        justify-content: space-between;
+    }
+    .high {
+        img {
+            max-width: 3rem;
+        }
+    }
+    .actual-list {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    li {
+        font-size: 1.5rem;
+    }
+}

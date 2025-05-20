@@ -284,7 +284,43 @@ background: linear-gradient(163deg, rgba(54, 33, 21, 1) 0%, rgba(38, 8, 8, 1) 92
 ----------------------------------------------------------*/
 
 
+@media only screen and (min-width:700px) {
+    .hero-written-content {
+    padding: 8rem 5rem 8rem 1rem;
+    background-image: url(/images/hero-home-desktop.jpeg);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    }
+    .who-and-image {
+        display: flex;
+        gap: 2rem;
+        justify-content: space-around;
 
+        align-items: center;
+        .cupman {
+            border-radius: 20px;
+        }
+        
+    }
+    .what-is-hijama-and-image {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        background-color:rgb(231, 198, 154) ;
+        img {
+            border-radius: 20px;
+        }
+        padding: 1rem;
+    }
+    .service-desktop {
+        display: flex;
+        gap: 2rem;
+        padding: 1rem
+    }
+
+}
+    
 
 
 
