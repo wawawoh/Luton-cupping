@@ -68,7 +68,7 @@ main {
     h1 {
         font-size: 2rem;
         position: relative;
-        width: min-content;
+        width: fit-content;
 
     }
     p {
@@ -115,7 +115,9 @@ h1.show::after {
 }
 .hero-button {
     background-color: #162D56;
-    
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
     color: white;
     
 }
@@ -198,7 +200,10 @@ img {
     }
     
 }
-
+.avoid-delay {
+    margin-top: 10%;
+    
+}
 /* OUR SERVICES
 ----------------------------------------------------------*/
 .our-services {
@@ -215,6 +220,7 @@ img {
     border: #B34A10 solid 1px;
     padding: 1rem;
     border-radius: 1rem;
+    justify-content: space-between;
     /* elemtns  */
     p {
         font-size: 0.8rem
@@ -256,14 +262,23 @@ img {
 /* HADITH
 ----------------------------------------------------------*/
 .hadith {
-    background-color: #5b3e2f;
+   background: #362115;
+background: linear-gradient(163deg, rgba(54, 33, 21, 1) 0%, rgba(38, 8, 8, 1) 92%);
 ;
     color: rgb(198, 169, 108);
     h2 {
         color: rgb(255, 255, 255);
         text-decoration-color: #B34A10;
     }
+    p.hidden {
+        opacity: 0;
+        transition: opacity 1s ease-out;
+    }
+    p.show {
+        opacity: 1;
+    }
 }
+
 
 /* footer
 ----------------------------------------------------------*/
