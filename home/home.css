@@ -1,11 +1,7 @@
 /* ORANGE #B34A10
     BLUE #162D56 */
 /* GLOBALS */
-body {
-    
-    font-family: Gentium Book Plus;
-    color: #162D56;
-}
+
 .who-content, .what-is-hijama, .our-services, .hadith {
     display: flex;
     flex-direction: column;
@@ -16,11 +12,11 @@ body {
     text-align: center;
 }
   .logo {
-        max-height: 80px;
-        max-width:80px;
-        object-fit: cover;
-        object-position: center;
-        border-radius: 90%;
+        max-width: 45px;
+    object-fit: cover;
+    
+    aspect-ratio: 1 / 1;
+    border-radius: 139%;
     }
 .cta-button {
     
@@ -39,35 +35,12 @@ h2 {
     text-decoration-color: #162D56
 }
 
-/* header 
-------------------------------------------*/
-header {
-    display: flex;
-    background-color: #B34A10;
-    padding: 1rem 1rem;
-    align-items: center;
-    gap: 1rem;
 
-    /* ELEMENTS  */
-  
-    p {
-        color: white;
-        margin-right: auto;
-        font-size: 1.2rem;
-        
-
-    }
-    .mobile-nav {
-        max-width: 15%;
-    }
-}
 
 
 /* MAIN CONTENT  
 --------------------------------------------------------------*/
-.main-content-wrapper {
-    /* inactive for now */
-}
+
 main {
     display: flex;
     flex-direction: column;
@@ -85,7 +58,7 @@ main {
 }
 .hero-written-content {
     padding: 8rem 5rem 8rem 1rem;
-    background-image: url(/images/floral-background-with-branch.jpg);
+    background-image: url(/images/hero-home-mobile.jpeg);
     background-position: center;
     background-repeat: none;
     background-size: cover;
@@ -94,6 +67,8 @@ main {
     /* elements */
     h1 {
         font-size: 2rem;
+        position: relative;
+        width: min-content;
 
     }
     p {
@@ -108,12 +83,29 @@ main {
         
        
         align-items: flex-start;
-        .book-now {
-            
-        }
+        
         
     }
 }
+h1::after {
+    
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0%;
+	height: 0.1em;
+	background-color: #162D56;
+	opacity: 0;
+    transition-delay: 2s;
+	transition: opacity 700ms , width 1s ease-in-out;
+}
+h1.show::after {
+    opacity: 1;
+	width: 100%;
+}
+
+
 .hero-button, .hero-second-button {
     padding: 0.5rem 1.5rem;
     border-radius: 2rem;
@@ -153,12 +145,26 @@ img {
     width: 20%;
 }
 }
-.cupman-wrapper {
-    height: 20rem;
-    overflow: hidden;
+
+.cupman {
+    height: 400px;
+    width: 100%;
+    object-position: top;
+    object-fit: cover;
 }
-
-
+.car.hidden {
+   
+    
+    filter: blur(2px);
+    transform: translateX(-200%);
+    /* transition-delay: 1s; */
+    transition: all 1s ;
+}
+.car.show {
+    
+    filter: blur(0);
+    transform: translateX(0);
+}
 
 /* HIJAMA 
 ----------------------------------------------------------*/
@@ -185,7 +191,7 @@ img {
 }
 .injuries {
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
     ul {
         padding: 0;
         font-weight: bold;
@@ -210,15 +216,39 @@ img {
     padding: 1rem;
     border-radius: 1rem;
     /* elemtns  */
+    p {
+        font-size: 0.8rem
+    }
     div {
         display: flex;
         flex-direction: column;
-        gap: 2rem;
+        gap: 1rem;
     }
     img {
-        width: 20%;
+        width: 15%;
     }
+   
     
+}
+.service-wrapper.hidden {
+    transform: translateY(100%);
+    transition: transform 500ms;
+}
+
+.service-wrapper.show {
+    transform: translateY(0);
+}
+ .cup-close-up {
+        height: 400px;
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+    }
+.prick {
+    height: 400px;
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
 }
 
 
@@ -226,7 +256,8 @@ img {
 /* HADITH
 ----------------------------------------------------------*/
 .hadith {
-    background-color: #1d2a41;
+    background-color: #5b3e2f;
+;
     color: rgb(198, 169, 108);
     h2 {
         color: rgb(255, 255, 255);
@@ -236,23 +267,8 @@ img {
 
 /* footer
 ----------------------------------------------------------*/
-footer {
-    background-color: #B34A10;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    gap: 1rem;
-    align-items: center;
-    .socials {
-        display: flex;
-        justify-content: space-around;
-        align-self: stretch;
-        
-        img {
-            max-height: 2rem;
-        }
-    }
-}
+
+
 
 
 

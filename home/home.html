@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="/reset.css">
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="/navbar.css">
+    <script src="/hamburger.js" defer></script>
+    <script src="/animation.js" defer ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -17,13 +21,14 @@
             
                 <img class="logo"src="/images/logo.jpg" alt="Luton cupping logo">
             
-            <p>Luton cupping</p>
+            <p>Luton Cupping Services</p>
             <nav class="mobile-nav" >
-                <img src="/images/burger.svg" alt="hamburger-menu">
-                <ul style="display: none;">
-                    <li class="navigation-link"><a href="/home/home.html" >Home</a></li>
+                <img class= "burger"src="/images/burger.svg" alt="hamburger-menu">
+                <ul class = "nav-list">
+                    <li><img class="cross" src="/images/cross.svg" alt=""></li>
+                    <li class="navigation-link "><a href="/home/home.html" >Home</a></li>
                     <li class="navigation-link"><a href="/contact/contact.html" >Book now</a></li>
-                    <li class="navigation-link"><a href="/services/services.html" >services</a></li>
+                    <li class="navigation-link"><a href="/services/services.html" >Services</a></li>
                 </ul>
                 
 
@@ -46,12 +51,12 @@
             <div class="hero-and-image">
                   <section class="hero">
                 <div class="hero-written-content">
-                       <h1>
+                       <h1 class="hidden">
                     Anytime. Anywhere.
                 </h1>
                 <p>From the clinic to the comfort of your couch</p>
                 <div class="button-container">
-                    <button class="hero-button">book now</button>
+                    <button class="hero-button">Book Now - while spaces last</button>
                     <button class="hero-second-button">See our services</button>
                 </div>
 
@@ -60,9 +65,7 @@
 
             </section>
              
-             <div class="cupman-wrapper">
-                <img src="/images/cupped-back-mobile (1).jpeg" alt="" srcset="/images/cupped-back.jpeg 2x">
-            </div>
+             
 
             </div>
           
@@ -84,14 +87,17 @@
                     <li>Expert before and aftercare - your health is our top priority</li>
                     <li>Fully insured and professional</li>
                 </ul>
-                <img src="/images/car-svgrepo-com.svg" alt="">
+                <img class = "hidden car" src="/images/car-svgrepo-com.svg" alt="">
                 <ul>
                     <li>Fully insured and professional</li>
                     <li>In-house and mobile services - you choose</li>
                 </ul>
-                <img src="#" alt="placeholder-image">
+                
 
             </section>
+            <div class="cupman-wrapper">
+                <img  class="cupman"src="/images/cupped-back-mobile (1).jpeg" alt="" srcset="/images/cupped-back.jpeg 2x">
+            </div>
 
             
 
@@ -109,58 +115,58 @@
                 <div class="injuries">
                     <ul>
                         <li>Joint pain</li>
-                        <li>Migranes</li>
+                        <li>Stress</li>
                         <li>Digestive Issues</li>
                         <li>Skin conditions</li>
                         <li>Sports-injuries</li>
                     </ul>
                     <ul>
-                        <li>Joint pain</li>
+                        <li>Back Pain</li>
+                        <li>Neck Pain</li>
                         <li>Migranes</li>
-                        <li>Digestive Issues</li>
-                        <li>Skin conditions</li>
-                        <li>Sports-injuries</li>
+                        <li>Acne</li>
+                        <li>Depression</li>
                     </ul>
                 </div>
                 <button class="cta-button">book now </button>
 
                 </section>
-                <div class="cup-close-up-wrapper">
-                    <img src="/images/cup-close-mobile.jpeg" alt="" srcset="/images/cuo-closeup.jpeg 2x">
-                </div>
+                
+                    <img class="cup-close-up"src="/images/cup-close-mobile.jpeg" alt="" srcset="/images/cuo-closeup.jpeg 2x">
+               
 
             </div>
            
            <div class="our-services-and-image">
             <section class="our-services">
                 <h2>Our services</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi cumque ab facere deleniti unde optio quam, error aspernatur, veniam dolores aut itaque, quo nulla reiciendis consequatur autem consequuntur eum distinctio.</p>
+                <p>Our services are catered to your individual needs...</p>
                 <div class="service-desktop">
-                     <article class="service-wrapper">
+                     <article class="service-wrapper hidden">
                     <div>
                         <h3>Fire Cupping </h3>
                         <p>
-                            fire cupping is  an art whihce use FIRE to get HIGHER its what i call a NEW desire TAKE ME HIGHER push me HIGHER with your speed, i need FIRE.
+                            Through the use of heated glass, blood flow is promoted reducing irritating pain and inflamation
 
                         </p>
                     </div>
                     <img src="/images/fire-svgrepo-com.svg" alt="">
                 </article>
-                  <article class="service-wrapper">
+                  <article class="service-wrapper hidden">
                     <div>
                         <h3>Water cupping </h3>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing eli
+                            Warm water is used to encourage blood circulation and relieve muscle tension
 
                         </p>
                     </div>
                     <img src="/images/drop-svgrepo-com.svg" alt="">
                 </article>
-                  <article class="service-wrapper">
+                  <article class="service-wrapper hidden">
                     <div>
                         <h3>Outcall Massage </h3>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias architecto sit vel quia voluptatibus, minima fugit dicta obcaecati, neque amet r
+                            We come straight to your door and provide treatment in your very own home.
 
                         </p>
                     </div>
@@ -172,14 +178,15 @@
                 <button class="cta-button">See all our services </button>
 
             </section>
-            <img src="" alt="placeholder-image">
+            <img class="prick"src="/images/prick.jpeg" alt="placeholder-image">
             
            </div>
            <section class="hadith ">
-            <h2>Hadtih</h2>
-            <p>
-                The prophet pbuh said its really good yknow i havent decided on a layout for this bit so we rolling kinda but i hope to do something very nice maybe just a nice bg would do yknow i try my best sometimes 
-            </p>
+            <h2>Did you Know..?</h2>
+            <blockquote>
+                The Prophet ﷺ said: “The best treatment is hijama cupping; it removes blood, lightens the back and sharpens the eyesight...”
+                
+            </blockquote>
            </section>
             
 

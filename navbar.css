@@ -1,0 +1,120 @@
+/* nav list  */
+.logo {
+        max-width: 45px;
+    object-fit: cover;
+    
+    aspect-ratio: 1 / 1;
+    border-radius: 139%;
+    }
+header {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    background-color: #B34A10;
+    padding: 0.4rem 1rem;
+    align-items: center;
+    gap: 1rem;
+
+    /* ELEMENTS  */
+  
+    p {
+        color: white;
+        margin-right: auto;
+        font-size: 1.2rem;
+        
+
+    }
+    .mobile-nav {
+        max-width: 10%;
+    }
+}
+
+.nav-list {
+    
+     list-style-type: none;
+    position: absolute;
+    left: 50%;
+    width: 50%;
+    height: 1000vh;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+    align-items: flex-start;
+    padding-right: 2rem;
+    gap: 1rem;
+    top: 0;
+    
+    a {
+        text-decoration: none;
+        color: #B34A10;
+    }
+    li {
+        font-size: 1.5rem;
+
+    }
+    .cross {
+        position: absolute;
+        top: 0;
+        right: 0;
+        max-width: 3rem;
+    }
+    /* animation */
+    z-index: 10;
+    transform: translateX(100%);
+    transition: transform 600ms ease-in-out;
+
+}
+.nav-list.active {
+    transform: translateX(0);
+    z-index: 1000;
+    
+    
+   
+}
+.main-content-wrapper::before {
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    background-color: rgb(107, 76, 76);
+    z-index: 10;
+    opacity: 0;
+    pointer-events: none;
+}
+.main-content-wrapper.active::before {
+    opacity: 0.5;
+}
+.main-content-wrapper {
+    pointer-events: all;
+}
+.main-content-wrapper.active {
+    pointer-events: none;
+}
+
+
+button:active {
+    transform:scale(0.9)
+
+}
+a:active {
+    text-decoration: underline;
+}
+footer {
+    background-color: #B34A10;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 0.4rem;
+    align-items: center;
+    .socials {
+        display: flex;
+        gap: 1rem;
+        
+        img {
+            max-height: 2rem;
+        }
+    }
+}

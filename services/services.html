@@ -4,19 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/reset.css">
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="/navbar.css">
+    <script src="/hamburger.js" defer></script>
     <title>Luton Cupping Services</title>
     <!-- add corresponding meta tags -->
 </head>
 <body>
-    <header>
-        <!-- HEADER CONNETN  -->
-    </header>
+   <header>
+            
+                <img class="logo"src="/images/logo.jpg" alt="Luton cupping logo">
+            
+            <p>Luton Cupping Services</p>
+            <nav class="mobile-nav" >
+                <img class= "burger"src="/images/burger.svg" alt="hamburger-menu">
+                <ul class = "nav-list">
+                    <li><img class="cross" src="/images/cross.svg" alt=""></li>
+                    <li class="navigation-link "><a href="/home/home.html" >Home</a></li>
+                    <li class="navigation-link"><a href="/contact/contact.html" >Book now</a></li>
+                    <li class="navigation-link"><a href="/services/services.html" >Services</a></li>
+                </ul>
+                
+
+            </nav>
+            <nav class="desktop-nav" style="display: none;">
+                   <ul>
+                    <li class="navigation-link"><a href="/home/home.html" >Home</a></li>
+                    <li class="navigation-link"><a href="/contact/contact.html" >Book now</a></li>
+                    <li class="navigation-link"><a href="/services/services.html" >services</a></li>
+                </ul>
+               
+
+            </nav>
+
+         
+        </header>
     <div class="main-content-wrapper">
         
         <main>
             <section class="hero">
-                <img src="#" alt="placeholder for hero">
                 <h1>Our services</h1>
                 <p>
                     Move freer.think clearer. intake the beauty of life. Your body desires natural remedial relief and not fast painkillers. 
@@ -28,7 +54,7 @@
                 </p>
 
             </section>
-            <img src="" alt="placeholder for clinic hijama">
+            <img class="clinic"src="/images/actual-clinic.jpeg" alt="placeholder for clinic hijama">
 
             <section class="packages">
                 <h2>Our Packages</h2>
@@ -84,7 +110,8 @@
             <section class="want-more">
                 <h2>Want more?</h2>
                 <p>Below is a list of all of the  accredited services we offer , choose and add them together in a way which target you best </p>
-                <ul>
+                <div class="list-of-services">
+                      <ul>
                     <li>Wet Cupping </li>
                     <li>Fire Cupping </li>
                     <li>Cupping Massage </li>
@@ -92,6 +119,10 @@
                     <li>Graston Therapy </li>
                     <li>Vitamin B12 shots</li>
                 </ul>
+                <img class="prick"src="/images/prick.jpeg" alt="">
+
+                </div>
+              
 
             </section>
             <img src="" alt="an image of home hijama">
@@ -107,9 +138,14 @@
         </main>
 
 
-        <footer>
-            <!-- FOOTER CONTENT  -->
-            
+       <footer>
+            <h4>Luton Cupping</h4>
+            <img class="logo" src="/images/logo.jpg" alt="">
+            <p>Follow us</p>
+            <div class="socials">
+                <a href="https://www.instagram.com/lutoncupping/?igsh=eTkybjI2MXo1aGI%3D#"><img src="/images/instagram-svgrepo-com.svg" alt=""></a>
+                <a href="http://facebook.com/people/Luton-Cupping/61570761802309/?_rdr"><img src="/images/facebook-176-svgrepo-com.svg" alt=""></a>
+            </div>
         </footer>
 
     </div>
