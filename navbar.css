@@ -40,7 +40,7 @@ header {
     background: white;
     display: flex;
     flex-direction: column;
-    padding-top: 5rem;
+    padding-top: 15rem;
     align-items: flex-start;
     padding-right: 2rem;
     gap: 1rem;

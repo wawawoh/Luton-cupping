@@ -57,7 +57,7 @@ main {
 
 }
 .hero-written-content {
-    padding: 8rem 5rem 8rem 1rem;
+    padding: 20vh 5rem 24vh 1rem;
     background-image: url(/images/hero-home-mobile.jpeg);
     background-position: center;
     background-repeat: none;
@@ -133,17 +133,30 @@ h1.show::after {
 ----------------------------------------------------------*/
 .who-content {
     ul {
-  list-style: none;
-  padding: 0;
+  list-style-type: none;
+  
+  padding: 2rem 1rem;
+  text-align: start;
+}
+li {
+    margin-bottom: 0.2rem;
+    position: relative;
+}
+li::before {
+    content: "";
+    background-image: url(/images/tick-circle-svgrepo-com.svg);
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    left: 0;
+    transform: translateX(-2rem);
+    width: 20px;
+    height: 20px;
 }
 
-ul li:before {
-  content: '✓';
-  color: #B34A10;
-  margin-right: 2rem;
-  text-align: center;
-}
-img {
+
+
+.car {
     width: 20%;
 }
 }
@@ -151,7 +164,7 @@ img {
 .cupman {
     height: 400px;
     width: 100%;
-    object-position: top;
+    object-position: center;
     object-fit: cover;
 }
 .car.hidden {
@@ -171,7 +184,7 @@ img {
 /* HIJAMA 
 ----------------------------------------------------------*/
 .what-is-hijama {
-    background-color: rgb(231, 198, 154);
+    background-color: rgb(229, 223, 216);
     p:first-of-type {
         position: relative;
     }
@@ -320,7 +333,7 @@ background: linear-gradient(163deg, rgba(54, 33, 21, 1) 0%, rgba(38, 8, 8, 1) 92
     }
 
 }
-    
+
 
 
 
