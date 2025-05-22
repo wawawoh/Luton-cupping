@@ -186,7 +186,7 @@ li::before {
 /* HIJAMA 
 ----------------------------------------------------------*/
 .what-is-hijama {
-    background-color: rgb(229, 223, 216);
+    
     p:first-of-type {
         position: relative;
     }
@@ -277,10 +277,8 @@ li::before {
 /* HADITH
 ----------------------------------------------------------*/
 .hadith {
-   background: #362115;
-background: linear-gradient(163deg, rgba(54, 33, 21, 1) 0%, rgba(38, 8, 8, 1) 92%);
-;
-    color: rgb(198, 169, 108);
+   
+
     h2 {
         color: rgb(255, 255, 255);
         text-decoration-color: #B34A10;

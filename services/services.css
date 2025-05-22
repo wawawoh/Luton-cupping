@@ -14,10 +14,10 @@ main {
 
 /* hero
 ------------------------------------ */
-h1 {
+.hero {
     margin: auto;
     width: 100%;
-    font-size: 2rem;
+    font-size: 1.3rem;
     padding: 20% 1px;
     background-image: url(/images/hero-mobile.jpeg);
     background-position: center;
@@ -40,9 +40,7 @@ h2, h1 {
 /* subhead
 -------------------------------- */
 main {
-    p {
-        padding: 2rem;
-    }
+    
 }
 
 h1,h2, h3, h4, p {
@@ -55,6 +53,7 @@ h1,h2, h3, h4, p {
     margin: 2rem;
     gap: 3rem;
 }
+
 .package {
     
     display: flex;
@@ -156,6 +155,8 @@ h1,h2, h3, h4, p {
     img {
         margin: auto;
     }
+    padding: 2rem;
+    margin-bottom: 1rem;
 }
 
 /* HEADER 
