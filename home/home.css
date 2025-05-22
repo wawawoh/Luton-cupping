@@ -136,11 +136,12 @@ h1.show::after {
   list-style-type: none;
   
   padding: 2rem 1rem;
-  text-align: start;
+  /* text-align: start; */
 }
 li {
     margin-bottom: 0.2rem;
     position: relative;
+    text-align: start;
 }
 li::before {
     content: "";
@@ -158,6 +159,7 @@ li::before {
 
 .car {
     width: 20%;
+    margin-top: -2rem;
 }
 }
 

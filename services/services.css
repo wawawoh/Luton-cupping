@@ -79,7 +79,7 @@ h1,h2, h3, h4, p {
         position: absolute;
         width: 100%;
         height: 2px;
-        background-color: #5378b9;
+        background-color: #ffae3c;
         left: 50%;
         bottom: -1rem;
         transform: translateX(-50%);
@@ -88,7 +88,7 @@ h1,h2, h3, h4, p {
     
     button {
         border: none;
-        background-color: #5378b9;
+        background-color: #b47825;
         padding: 0.4rem 1rem;
         border-radius: 0.5rem;
         color: white;
@@ -98,7 +98,7 @@ h1,h2, h3, h4, p {
     }
 }
 .low {
-    border: solid #7e98c6 2px;
+    border: solid #e38b39 2px;
     border-radius: 4px;
 }
 .medium {
@@ -115,7 +115,7 @@ h1,h2, h3, h4, p {
       border: #eab89e solid 2px;
       color: #B34A10;
     border-radius: 4px;
-    background-image: linear-gradient(to right top, #f8da4d, #ffcb84, #ffcbc2, #ffdaef, #ffecff, #ffecff, #ffecff, #ffecff, #ffdaef, #ffcbc2, #ffcb84, #f8da4d);
+    /* background-image: linear-gradient(to right top, #f8da4d, #ffcb84, #ffcbc2, #ffdaef, #ffecff, #ffecff, #ffecff, #ffecff, #ffdaef, #ffcbc2, #ffcb84, #f8da4d); */
     ul::after {
         background-color: #e8c4b1;
     }
